@@ -30,7 +30,7 @@ body {
 }
 
 .mainBox {
-  width: 90%;
+  width: 98%;
   max-width: 550px;
   background: var(--whiteBG);
   border-radius: 13px;
@@ -62,9 +62,10 @@ body {
 
 .inputSection {
   display: flex;
+  margin: 20px 0px 10px 0px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .inputSection input {
@@ -119,18 +120,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 .Column {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .Column img {
-  width: 40px;
+  width: 30px;
   height: 40px;
-  margin: 10px 20px;
+  margin-right: 10px;
   margin-left: 0;
 }
 
