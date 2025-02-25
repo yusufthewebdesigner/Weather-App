@@ -1,6 +1,7 @@
 // Dark theme
 let mainBox = document.querySelector(".mainBox");
 let ThemeToggle = document.querySelector("#themeToggle");
+
 ThemeToggle.onclick = function () {
   mainBox.classList.toggle("darkTheme");
   if (ThemeToggle.src.match("Moon")) {
@@ -101,3 +102,17 @@ inputField.addEventListener("keydown", (event) => {
 
 // Get weather for current location on page load
 getCurrentLocationWeather();
+
+// Timmer function
+window.onload = () => {
+  const time = new Date().getHours();
+  if (time > 6 && time < 18) {
+    mainBox.style.backgroundImage = "url(./Media/SunnyDay.jpg)";
+    mainBox.style.backgroundSize = "cover";
+    mainBox.style.backgroundBlendMode = "multiply";
+  } else {
+    mainBox.style.backgroundImage = "url(./Media/StarryNight.jpg)";
+    mainBox.style.backgroundSize = "contain";
+    mainBox.style.backgroundBlendMode = "multiply";
+  }
+};
