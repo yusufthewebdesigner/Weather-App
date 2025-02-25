@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainBox">
+      <div class="heading">
+        <h2>Weather APP</h2>
+        <img src="Media/Moon.svg" id="themeToggle" />
+      </div>
+      <div class="inputSection">
+        <input
+          type="text"
+          placeholder="Your City"
+          id="inputField"
+          spellcheck="false"
+        />
+        <img src="Media/search.svg" id="searchButton" />
+      </div>
+      <h2 class="alertSection">Sorry! City Not Found</h2>
+      <div class="weatherSection">
+        <div class="mainWeather">
+          <img src="Media/clouds.png" id="weatherImage" />
+          <div class="temp">
+            <h1 id="temperature">22C</h1>
+            <h1 id="cityName">Dhaka</h1>
+          </div>
+        </div>
+        <div class="detailWeather">
+          <div class="Column">
+            <img src="Media/wind.png" />
+            <div class="humidityDetail">
+              <h2 id="windSpeed">x Km/h</h2>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="Column">
+            <img src="Media/humidity.png" />
+            <div class="humidityDetail">
+              <h2 id="humidity">x%</h2>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
